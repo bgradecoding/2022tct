@@ -43,7 +43,6 @@ const Detail = () => {
 
   //axios
   useEffect(() => {
-    console.log(1);
     axios.get(`http://localhost:3300/v1/item/${param.id}`).then((respose) => {
       console.log(respose?.data);
       if (respose?.data?.item) {
